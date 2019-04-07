@@ -9,10 +9,10 @@
             <legend><?= t('Profile') ?></legend>
 
             <?= $this->form->label(t('Username'), 'username') ?>
-            <?= $this->form->text('username', $values, $errors, array('autofocus', 'required', 'maxlength="191"', 'autocomplete="username"')) ?>
+            <?= $this->form->text('username', $values, $errors, array('autofocus', 'required', 'minlength="4"', 'maxlength="191"', 'pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{3,191}$"')) ?>
 
             <?= $this->form->label(t('Name'), 'name') ?>
-            <?= $this->form->text('name', $values, $errors, ['autocomplete="name"']) ?>
+            <?= $this->form->text('name', $values, $errors, array('required', 'minlength="4"', 'maxlength="191"')) ?>
 
             <?= $this->form->label(t('Email'), 'email') ?>
             <?= $this->form->email('email', $values, $errors, array('required', 'autocomplete="email"')) ?>
