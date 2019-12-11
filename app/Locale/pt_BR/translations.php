@@ -37,7 +37,7 @@ return array(
     'Username' => 'Nome de usuário',
     'Password' => 'Senha',
     'Administrator' => 'Administrador',
-    'Sign in' => 'Entrar',
+    'Sign in' => 'Acessar',
     'Users' => 'Usuários',
     'Forbidden' => 'Proibido',
     'Access Forbidden' => 'Acesso negado',
